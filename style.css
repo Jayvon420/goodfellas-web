@@ -213,6 +213,14 @@ header{
 }
 
 /* Section heading and paragraph styling */
+.section__title {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+
 .section h1 {
     font-size: 50px;
     font-family: "Playfair Display SC", serif;
@@ -303,7 +311,7 @@ header{
 }
 
 .content__sponsors img {
-    width: 200px;
+    width: 320px;
     height: auto;
     opacity: 0.8;
     transition: 300ms ease-in-out;
@@ -318,7 +326,7 @@ header{
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: 0 0 25px var(--bg-primary);
-    background-color: var(--bg-secondary);
+    background-color: #c9c9c9;
     color: black;
 }
 
@@ -411,6 +419,15 @@ header{
     justify-content: start;
     gap: 25px;
     flex-direction: column;
+}
+.mini-links1 li a{
+    text-decoration: none;
+    color: var(--text-white);
+}
+.mini-links2 li a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding-left: 50px;
 }
 .social-links{
     display: flex;
@@ -517,6 +534,9 @@ header{
     .section p{
         font-size: 20px;
         padding-bottom: 30px;
+    }
+    .section__title{
+        padding-bottom: 0;
     }
     .btn {
         padding: 5px 20px ;
