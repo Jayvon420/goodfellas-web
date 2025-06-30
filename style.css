@@ -99,8 +99,15 @@
 
 
 header{
-    padding: 20px 150px;
     background-color: var(--bg-primary);
+    color: var(--text-color);
+    padding: 20px  150px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: none;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    -webkit-backdrop-filter: none; /* Safari support */
 }
 .nav__bar{
     display: grid;
@@ -445,6 +452,14 @@ header{
     header {
         padding: 20px 30px;
         position: relative;
+        background-color: var(--bg-primary);
+        color: var(--text-color);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: none;
+        transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+        -webkit-backdrop-filter: none; /* Safari support */
     }
 
     .nav__bar {
@@ -512,6 +527,12 @@ header{
 
     .content img{
         order: 1;
+    }
+
+   
+    .content__sponsors{
+        justify-content: center;
+        align-items: center;
     }
 
     .section__contact form {
