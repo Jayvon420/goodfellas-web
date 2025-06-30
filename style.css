@@ -505,6 +505,20 @@ header{
     .section, .section__cta, .section__contact, .section__partner, .footer_container {
         padding: 50px 30px;
     }
+    .section h1{
+        font-size:40px;
+        padding-bottom: 30px;
+    }
+    .section p{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .btn {
+        padding: 5px 20px ;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
 
     /* Stack content vertically */
     .content img{
