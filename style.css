@@ -498,13 +498,13 @@ header{
         right: 0;
         background-color: var(--bg-primary);
         width: 35%;
-        padding: 20px 30px;
+        padding: 40px 30px;
         display: none;
         gap: 20px;
         color: var(--accent-color);
         border-left: 1px solid var(--accent-color);
         border-bottom: 1px solid var(--accent-color);
-        border-radius: 0 15px;
+        border-radius: 0 0 0 15px;
         z-index: 99;
     }
 
@@ -516,7 +516,7 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
     }
 
     /* Adjust section padding */
