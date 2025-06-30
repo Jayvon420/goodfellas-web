@@ -539,19 +539,25 @@ header{
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
-
-    footer{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+    .footer_container h3{
+       font-size:20px;
     }
+ 
     .footer__content {
         grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
-        /* justify-items: center; */
+        justify-items: center;
     }
+    .footer__content ul li{
+        font-size: 15px;
+    }
+
+    .copyright h4{
+     font-size : 15px
+
+    }
+   
 
     .mini-links1,
     .mini-links2,
