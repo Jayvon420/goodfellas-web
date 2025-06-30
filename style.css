@@ -539,15 +539,12 @@ header{
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    .footer_container{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
+    
     .footer__content {
         grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
+        justify-items: center;
     }
 
     .mini-links1,
