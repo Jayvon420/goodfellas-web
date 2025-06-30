@@ -448,7 +448,7 @@ header{
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 768px) {
     header {
         padding: 20px 30px;
         position: relative;
@@ -515,7 +515,7 @@ header{
         grid-template-columns: 1fr;
         gap: 30px;
     }
-
+    
     .content__text{
         order: 2;
     }
