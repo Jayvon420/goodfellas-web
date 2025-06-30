@@ -448,7 +448,7 @@ header{
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     header {
         padding: 20px 30px;
         position: relative;
@@ -516,11 +516,6 @@ header{
         gap: 30px;
     }
 
-    /* .content.reverse .content__text,
-    .content.reverse img {
-        order: unset;
-    } */
-
     .content__text{
         order: 2;
     }
@@ -557,7 +552,6 @@ header{
      font-size : 15px
 
     }
-   
 
     .mini-links1,
     .mini-links2,
