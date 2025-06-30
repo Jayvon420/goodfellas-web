@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GoodFellas | Home</title>
 </head>
 <body>
 
-    <main>
 
+    <main>
         <header>
-            <nav class="nav-bar">
+            <nav class="nav__bar">
                 <a href="#home" class="logo">
-                    <img src="image/500x500-goldmain.png" alt="GoodFellas Logo">
+                    <img src="images/500x500-goldmain.png" alt="GoodFellas Logo">
                 </a>
 
-                <i class="fa-solid fa-bars" 
-                id="menu-icon"></i>
+                <!-- <i class="fa-solid fa-bars" 
+                id="menu-icon"></i> -->
 
                 <div class="nav__menu">
                     <ul class="nav__links">
@@ -30,213 +29,127 @@
             </nav>
         </header>
 
-        <section class="section section--content-left" id="home"
-            style="--section-bg-color: #131313; 
-                --section-bg-image: url('image/1.png'); 
+
+    <section class="section section--center" id="about"
+        style="--section-bg-color: #131313;
+                --section-bg-image: url('images/1.png');
+                --section-bg-size: cover;
                 --section-bg-opacity: 0.1;">
-            <div class="content__text">
-                <h1 class="mb-5">More Than A Business — <span class="span__text--highlight">We’re Family</span></h1>
-                <p class="mb-5">Whether you're detailing your ride, energizing your body,<br>or inspiring your spirit, Goodfellas is here to serve with <br>heart, craft, and care.</p>
-                <div class="button__group">
-                    <a href="##" class="btn">Contact</a>
-                    <a href="##" class="btn btn--outline">Explore</a>
-                </div>
+            <h1 class="mb-5">More Than A Business — <span style="color: #FED402;">We’re Family</span></h1>
+            <p>Whether you're detailing your ride, energizing your body,<br>or inspiring your spirit, Goodfellas is here to serve with <br>heart, craft, and care.</p>
+            <div class="btn--group">
+                <a href="##" class="btn">Contact</a>
+                <a href="##" class="btn btn--outline">Explore</a>
             </div>
         </section>
 
-        <section class="section section--content-center" id="about"
-            style="--section-bg-color: #000;
-                --section-bg-image: url('image/500x500-goldmain.png');
+    <section class="section section--center section--content-center" id="about"
+        style="--section-bg-color: #000;
+                --section-bg-image: url('images/500x500-goldmain.png');
                 --section-bg-size: contain;
                 --section-bg-opacity: 0.1;">
-            <div class="content__text">
-                <h1 class="mb-5">A Brand Built on Trust, Passion, and Purpose</h1>
-                <p class="mb-5">Goodfellas is more than a name—it’s a promise. We are a passionate group of companies, blending local and international ventures with one shared mission: to lead with integrity, serve with heart, and make a lasting impact.
-                Whether it’s premium car care, exceptional dining, or giving back to our communities, everything we do is fueled by trust, loyalty, and excellence.
-                We don’t just deliver products or services—we create meaningful experiences that leave a mark.</p>
+            <h1 class="mb-5">A Brand Built on Trust, Passion, and Purpose</h1>
+
+            <p class="mb-5">Goodfellas is more than a name—it’s a promise. We are a passionate group of companies, blending local and international ventures with one shared mission: to lead with integrity, serve with heart, and make a lasting impact.
+            Whether it’s premium car care, exceptional dining, or giving back to our communities, everything we do is fueled by trust, loyalty, and excellence.
+            We don’t just deliver products or services—we create meaningful experiences that leave a mark.</p>
+
+            <div class="btn--group">
                 <a href="##" class="btn btn--outline">Explore</a>
             </div>
         </section>
 
         <section class="section__cta">
-            <div class="content__text ">
-                <p class="mb-3">Business with a Heartbeat.
-                From local outreach to meaningful acts of care, One Family is our way of  giving back because true success is shared.</p>
+            <p>Business with a Heartbeat. From local outreach to meaningful acts of care, One Family is our way of giving back because true success is shared.</p>
+            <div class="btn--group">
+                <a href="##" class="btn btn--black">Learn more..</a>
             </div>
-                <a href="##" class="btn btn--black">Learn more.</a>
         </section>
-        
-        <!-- using reusable css section start -->
-        <section class="section__services section--left" id="services"
-            style="--bg-image: url('image/car-bg.jpg'); 
-                --bg-opacity: 0.1;
-                --bg-color: #131313;">
-            <div class="content__text">
-                <h2 class="mb-5">Crafted for Car Lovers. Trusted by Purists.</h2>
-                <p class="mb-5">Premium detailing, protection, and custom care for vehicles that deserve more than just maintenance—they deserve mastery.
-                </p>
-                <div class="button__group">
-                    <a href="##" class="btn">Contact</a>
-                    <a href="autoworx.html" class="btn btn--outline">Explore</a>
+
+        <section class="section"
+            style="--section-bg-color: #131313;
+                    --section-bg-image: url('images/car-bg.jpg');
+                    --section-bg-size: contain;
+                    --section-bg-opacity: 0.1;">
+            <div class="content">
+                <div class="content__text">
+                    <h3>Crafted for Car Lovers. Trusted by Purists.</h3>
+                    <p>Premium detailing, protection, and custom care for vehicles that deserve more than just maintenance—they deserve mastery.</p>
                 </div>
-            </div>
-            <div class="content__image">
-                <img src="image/car-repair.jpg" alt="Car picture">
+                <img src="images/car-repair.jpg" alt="car-picture">
             </div>
         </section>
 
-        <section class="section__services section--right"
-            style="--bg-image: url('image/wine-bg.jpg');
-                --bg-opacity: 0.1;
-                --bg-color: #000;">
-            <div class="content__text">
-                <h2 class="mb-5">Fuel for the Body & Soul</h2>
-                <p class="mb-5">Enjoy refreshing drinks, delicious meals, and premium products—all in a space made for relaxing, connecting, and enjoying life.
-                </p>
-                <div class="button__group">
-                    <a href="" class="btn">Contact</a>
-                    <a href="" class="btn btn--outline">Explore</a>
+        <section class="section"
+            style="--section-bg-color: #000;
+                    --section-bg-image: url('images/wine-bg.jpg');
+                    --section-bg-size: cover;
+                    --section-bg-opacity: 0.1;">
+            <div class="content reverse">
+                <div class="content__text">
+                    <h3>Fuel for the Body & Soul</h3>
+                    <p>Enjoy refreshing drinks, delicious meals, and premium products—all in a space made for relaxing, connecting, and enjoying life.</p>
                 </div>
-            </div>
-            <div class="content__image">
-                <img src="image/wine-glass.jpg" alt="glass of wine">
+                <img src="images/wine-glass.jpg" alt="Wine pic">
             </div>
         </section>
 
-        <section class="section__services section--left"
-            style="--bg-image: url('image/of-bg.jpg');
-                --bg-opacity: 0.1;
-                --bg-color: #131313;">
-            <div class="content__text">
-                <h2 class="mb-5">Business with a Heartbeat.</h2>
-                <p class="mb-5">From local outreach to meaningful acts of care, One Family is our way of giving back—because true success is shared.
-                </p>
-                <div class="button__group">
-                    <div class="btn">Contact</div>
-                    <div class="btn btn--outline">Explore</div>
+                <section class="section"
+            style="--section-bg-color: #000;
+                    --section-bg-image: url('images/of-bg.jpg');
+                    --section-bg-size: cover;
+                    --section-bg-opacity: 0.1;">
+            <div class="content">
+                <div class="content__text">
+                    <h3>Business with a Heartbeat.</h3>
+                    <p>From local outreach to meaningful acts of care, One Family is our way of giving back—because true success is shared.</p>
                 </div>
-            </div>
-            <div class="content__image">
-                <img src="image/of-image.jpg" alt="OneFam image">
+                <img src="images/of-image.jpg" alt="oneFamily pic">
             </div>
         </section>
-        <!-- using reusable css section end -->
 
-        <section class="cta__2">
-            <div class="content__text text-white">
-                <h1 class="mb-3">Backed by businesses internationally.</h1>
-            </div>
-
+        <section class="section__partner">
             <div class="content__sponsors">
-                <img src="sponsor/NBMS.png" alt="NBMS Logo">
-                <img src="sponsor/PayJezzy.png" alt="PayJezzy Logo">
-                <img src="sponsor/Vasu.png" alt="Vasu Logo">
-                <img src="sponsor/MY UMBRELLA TREE, LLC no bg.png" alt="My Umbrella Tree Logo">
-                <img src="sponsor/Joind2gether.png" alt="Joind2gether Logo">
+                <img src="images/NBMS.png" alt="NBMS">
+                <img src="images/PayJezzy.png" alt="PayJezzy">
+                <img src="images/Vasu.png" alt="Vasu">
+                <img src="images/MY UMBRELLA TREE, LLC no bg.png" alt="mut">
+                <img src="images/Joind2gether.png" alt="Joind2gether">
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="content__text text-white text-center">
-                <h1 class="mb-5">Reach out and Connect</h1>
 
-                <form action="" method="">
-                    <div class="input--group">
-                        <div class="input-box">
-                            <label for="name">Name</label>
-                            <input type="text" placeholder="Fullname">
-                        </div>
-                        <div class="input-box">
-                            <label for="Email">Email</label>
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div class="input-box">
-                            <label for="phone">Phone</label>
-                            <input type="number" placeholder="Phone">
-                        </div>
-                        <div class="input-box">
-                            <label for="subject">Subject</label>
-                            <input type="text" placeholder="Subject">
-                        </div>
+        <section class="section__contact">
+            <h1>CONTACT</h1>
+            <form action="">
+                <div class="input-group-1">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="input-group-2">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <div class="button-bot">
+                        <button class="btn" type="submit">Submit</button>
                     </div>
-                    <div class="input-group-2">
-                        <textarea name="" id="" placeholder="Your Message Here"></textarea>
-                        <input type="submit" value="send message"
-                        class="btn">
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </section>
 
-        <footer class="section__footer">
-            <div class="footer__content text-white">
-                <div class="small-links">
-                    <a href="##">About</a>
-                    <a href="##">services</a>
-                    <a href="##">About</a>
-                </div>
-                <div class="locations">
-                    <h3>get in touch</h3>
-                    <a href="##">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Get Directions →
-                    </a>
-                    <a href="##">
-                        <i class="fa-solid fa-envelope"></i>
-                        sales@goodfellaspitstop.com →
-                    </a>
-                    <a href="##">
-                        <i class="fa-solid fa-phone"></i>
-                        0917 135 2167 →
-                    </a>
-                </div>
-                <div class="social-links">
-                    <h3 >Follow us</h3>
-                    <div class="icons">
-                        <a href="##">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="##">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="##">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border"></div>
-            <div class="copy-right">
-                ©Goofellas 2025 | Allright Reserved
-            </div>
-        </footer>
+
+
 
     </main>
-
-
-    <script>
-        let menuIcon = document.querySelector('#menu-icon');
-        let navbar = document.querySelector('.nav__menu');
-
-        menuIcon.onclick = () => {
-            navbar.classList.toggle('active');
-            menuIcon.classList.toggle('fa-bars');
-            menuIcon.classList.toggle('fa-xmark');
-        };
-
-    </script>
-
-    <!-- <script>
-    document.querySelectorAll('.section__services').forEach(section => {
-        const bg = section.dataset.bg;
-        const opacity = section.dataset.bgOpacity || "0.1";
-        const bgColor = section.dataset.bgColor || "#131313";
-
-        if (bg) section.style.setProperty('--bg-image', `url('${bg}')`);
-        section.style.setProperty('--bg-opacity', opacity);
-        section.style.setProperty('--bg-color', bgColor);
-    });
-    </script> -->
 </body>
 </html>
