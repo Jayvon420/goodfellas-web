@@ -505,9 +505,13 @@ header{
     .section, .section__cta, .section__contact, .section__partner, .footer_container {
         padding: 50px 30px;
     }
+    .section{
+        text-align: start;
+    }
     .section h1{
         font-size:40px;
         padding-bottom: 30px;
+        line-height: 1.2;
     }
     .section p{
         font-size: 20px;
@@ -517,6 +521,17 @@ header{
         padding: 5px 20px ;
         font-weight: 600;
         font-size: 15px;
+    }
+    .content__text h3{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .content__text p{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .section__cta p{
+        font-size: 25px ;
     }
     
 
