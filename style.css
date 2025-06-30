@@ -222,6 +222,7 @@ header{
     font-size: 30px;
     font-family: "Playfair Display SC", serif;
     padding-bottom: 70px
+
 }
 .content__text p{
     font-size: 25px;
@@ -231,6 +232,7 @@ header{
 
 .content img{
     width: 100%;
+    min-width: 500px;
     height: auto;
     border-radius: 25px;
     box-shadow: 0 0 25px var(--bg-primary);
@@ -315,11 +317,13 @@ header{
 
 
  .section__contact {
-    padding: 100px 20px;
+    padding: 150px 150px;
     display: grid;
     justify-items: center;
     gap: 50px;
     background-color: var(--bg-primary);
+    color: white;
+    font-family: "Playfair Display SC", serif;
 }
 
 .section__contact h1 {
@@ -329,10 +333,10 @@ header{
 
 .section__contact form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,  1fr 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,  1fr));
     width: 100%;
     max-width: 1000px;
-    gap: 40px;
+    gap: 70px;
 }
 
 .input-group-1,
@@ -361,8 +365,7 @@ header{
 }
 
 .input-group-2 textarea {
-    /* resize: vertical; */
-    min-height: 150px;
+    min-height: 250px;
     resize: none;
 }
 
@@ -370,4 +373,162 @@ header{
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
+}
+
+.footer_container{
+    padding: 70px 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    background-color: var(--bg-secondary);
+    color: white;
+    font-family: "Playfair Display SC", serif;
+}
+.footer_container h3{
+    text-align: center;
+    font-size: 35px;
+}
+.footer__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.footer__content ul li{
+    list-style: none;
+    font-size: 20px;
+}
+
+.mini-links1, .mini-links2{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 25px;
+    flex-direction: column;
+}
+.social-links{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-links h4{
+    font-size: 20px;
+
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.social-icons a{
+    color: var(--text-white);
+    font-size: 25px;
+}
+.line{
+    border: 1px solid var(--text-white);
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright h4{
+    font-size: 20px;
+}
+
+#menu-icon{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+        position: relative;
+    }
+
+    .nav__bar {
+        grid-template-columns: 1fr auto;
+    }
+
+    #menu-icon {
+        display: block;
+        color: var(--accent-color);
+        font-size: 30px;
+        cursor: pointer;
+        justify-self: end;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--bg-primary);
+        width: 35%;
+        padding: 20px 30px;
+        display: none;
+        gap: 20px;
+        color: var(--accent-color);
+        border-left: 1px solid var(--accent-color);
+        border-bottom: 1px solid var(--accent-color);
+        border-radius: 0 15px;
+        z-index: 99;
+    }
+
+    .nav__menu.active {
+        display: block;
+    }
+
+    .nav__links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .nav__links li a{
+    
+    }
+
+    /* Adjust section padding */
+    .section, .section__cta, .section__contact, .section__partner, .footer_container {
+        padding: 50px 30px;
+    }
+
+    /* Stack content vertically */
+    .content img{
+        min-width: 250px;
+    }
+    .content,
+    .content.reverse {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .content.reverse .content__text,
+    .content.reverse img {
+        order: unset; /* remove reverse stacking on mobile */
+    }
+
+    .section__contact form {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .mini-links1,
+    .mini-links2,
+    .social-links {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .social-icons {
+        justify-items: center;
+    }
 }

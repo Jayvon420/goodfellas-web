@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>GoodFellas | Home</title>
 </head>
@@ -16,8 +17,8 @@
                     <img src="images/500x500-goldmain.png" alt="GoodFellas Logo">
                 </a>
 
-                <!-- <i class="fa-solid fa-bars" 
-                id="menu-icon"></i> -->
+                <i class="fa-solid fa-bars bar" 
+                id="menu-icon"></i>
 
                 <div class="nav__menu">
                     <ul class="nav__links">
@@ -120,7 +121,7 @@
 
 
         <section class="section__contact">
-            <h1>CONTACT</h1>
+            <h1>Reach Out and Connect</h1>
             <form action="">
                 <div class="input-group-1">
                     <label for="name">Name</label>
@@ -141,15 +142,68 @@
                     <textarea id="message" name="message"></textarea>
 
                     <div class="button-bot">
-                        <button class="btn" type="submit">Submit</button>
+                        <button class="btn" type="submit">send message</button>
                     </div>
                 </div>
             </form>
         </section>
 
+        <footer>
+            <div class="footer_container">
+                <h3>Get in Touch</h3>
 
+                <div class="footer__content">
 
+                    <ul class="mini-links1">
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+
+                    <ul class="mini-links2">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> Get direction →
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>sales@goodfellaspitstop.com →
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>0917 135 2167 →
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="##"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="##"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="##"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="line"></div>
+
+            <div class="copyright">
+                <h4>©Goofellas 2025 | Allright Reserved</h4>
+            </div>
+        </footer>
 
     </main>
+
+    <script>
+        const menuIcon = document.querySelector('#menu-icon');
+        const navMenu = document.querySelector('.nav__menu');
+
+        menuIcon.onclick = () => {
+            navMenu.classList.toggle('active');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-xmark');
+        };
+    </script>
+
 </body>
 </html>
