@@ -14,13 +14,9 @@
     display: grid;
     grid-template-columns: 1fr 250px;
     gap: 20px;
-    padding: 20px 150px;
+    padding: 50px 150px;
 }
 
-/* Sidebar styles */
-.sidebar {
-    box-sizing: border-box;
-}
 
 /* Main content styles */
 .main-content {
@@ -57,12 +53,25 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
     border-radius: 5px;
 }
-
+.blog-pagess img{
+    width: 100%;
+}
 
 @media (max-width: 768px) {
 
     .container{
         grid-template-columns: 1fr;
+        padding: 20px 20px;
+    }
+    .sidebar{
+        padding: 0;
+        margin: 0;
+        justify-items: center;
+    }
+    .side{
+        padding: 0;
+        margin: 0;
+
     }
 }
 
@@ -97,14 +106,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                 </div>
             </section>
-                        <section class="blog-pagess">
-                <div class="content__blog">
-                    <img src="blog-pic/blood-donation.jpg" alt="">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </section>
-                        <section class="blog-pagess">
+            <section class="blog-pagess">
                 <div class="content__blog">
                     <img src="blog-pic/blood-donation.jpg" alt="">
                     <h3>Title</h3>
@@ -166,6 +168,51 @@
 
         </aside>
     </div>
+
+     <footer>
+            <div class="footer_container">
+                <h3>Get in Touch</h3>
+
+                <div class="footer__content">
+
+                    <ul class="mini-links1">
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="mini-links2">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> <a href="##">Get direction →</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i><a href="##">sales@goodfellaspitstop.com →</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i><a href="##">0917 135 2167 →</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="##"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="##"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="##"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="line"></div>
+
+                <div class="copyright">
+                    <h4>©Goofellas 2025 | Allright Reserved</h4>
+                </div>
+            </div>
+        </footer>
 
 </body>
 </html>
