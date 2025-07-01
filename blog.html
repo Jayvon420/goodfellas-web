@@ -13,7 +13,7 @@
     <main>
         <header>
             <nav class="nav__bar">
-                <a href="#home" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/500x500-goldmain.png" alt="GoodFellas Logo">
                 </a>
 
@@ -30,14 +30,128 @@
             </nav>
         </header>
 
-        <section class="section section--center" id="about"
-        style="--section-bg-color: #131313;
+        <section class="section section--content-center" id="about"
+            style="--section-bg-color: #000;
                 --section-bg-image: url('');
                 --section-bg-size: cover;
                 --section-bg-opacity: 0.1;">
 
+            <h1 class="pb-70">Blog Post</h1>
+            <div class="card__section">
+
+            <a href="blog-page.html">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/hiking.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/outreach.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/meeting.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+
+            <a href="blog-page.html">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/Hiking-fellas.JPG" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/meeting.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/outreach.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="blog--card" data-card>
+                    <img src="blog-pic/hiking.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </a>
+            </div>
+            
+            <!-- Pagination Controls -->
+            <div id="pagination-controls" class="pgnt-btn-group">
+                <button id="prevBtn" class="pgnt-btn">&lt;</button>
+                <span id="pageNumbers" class="pgnt-number"></span>
+                <button id="nextBtn" class="pgnt-btn">&gt;</button>
+            </div>
         </section>
 
+
+
+                <footer>
+            <div class="footer_container">
+                <h3>Get in Touch</h3>
+
+                <div class="footer__content">
+
+                    <ul class="mini-links1">
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="mini-links2">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> <a href="##">Get direction →</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i><a href="##">sales@goodfellaspitstop.com →</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i><a href="##">0917 135 2167 →</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="##"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="##"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="##"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="line"></div>
+
+                <div class="copyright">
+                    <h4>©Goofellas 2025 | Allright Reserved</h4>
+                </div>
+            </div>
+        </footer>
 
 
     </main>
@@ -52,5 +166,68 @@
             menuIcon.classList.toggle('fa-xmark');
         };
     </script>
+
+<!-- pagination applied -->
+    <script>
+        const cards = document.querySelectorAll('[data-card]');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pageNumbersContainer = document.getElementById('pageNumbers');
+
+        const itemsPerPage = 4;
+        const maxVisiblePages = 3; // max numbers shown in pagination
+        let currentPage = 0;
+        const totalPages = Math.ceil(cards.length / itemsPerPage);
+
+        function showPage(page) {
+            const start = page * itemsPerPage;
+            const end = start + itemsPerPage;
+
+            cards.forEach((card, index) => {
+                card.style.display = index >= start && index < end ? 'block' : 'none';
+            });
+
+            currentPage = page;
+            updatePaginationControls();
+        }
+
+        function updatePaginationControls() {
+            prevBtn.disabled = currentPage === 0;
+            nextBtn.disabled = currentPage === totalPages - 1;
+
+            pageNumbersContainer.innerHTML = '';
+
+            // Determine start and end page numbers for visible range
+            let startPage = Math.max(currentPage - 1, 0);
+            let endPage = startPage + maxVisiblePages;
+
+            if (endPage > totalPages) {
+                endPage = totalPages;
+                startPage = Math.max(endPage - maxVisiblePages, 0);
+            }
+
+            for (let i = startPage; i < endPage; i++) {
+                const btn = document.createElement('button');
+                btn.classList.add('pgnt-number-btn'); //added line for every number have class
+                btn.textContent = i + 1;
+                btn.disabled = i === currentPage;
+                btn.addEventListener('click', () => showPage(i));
+                pageNumbersContainer.appendChild(btn);
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) showPage(currentPage - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages - 1) showPage(currentPage + 1);
+        });
+
+        showPage(0);
+    </script>
+
+
+
 </body>
 </html>

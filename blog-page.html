@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>GoodFellas | Home</title>
+</head>
+
+<style>
+    /* Container for the entire layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+    padding: 20px 150px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    box-sizing: border-box;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.content__blog img{
+    width: 100%;
+}
+.content__blog{
+    color: black;
+    text-align: start;
+}
+.side img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.side {
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out, padding 300ms ease-in-out;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.side:hover {
+    transform: scale(1.1) translateY(-10px); /* Adds a slight upward movement along with scaling */
+    background-color: #e1dede;
+    color: black;
+    padding: 20px; /* Increases padding to make it feel more spacious */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+<body>
+        <header>
+            <nav class="nav__bar">
+                <a href="index.html" class="logo">
+                    <img src="images/500x500-goldmain.png" alt="GoodFellas Logo">
+                </a>
+
+                <i class="fa-solid fa-bars bar" 
+                id="menu-icon"></i>
+
+                <div class="nav__menu">
+                    <ul class="nav__links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    <div class="container">
+        <main class="main-content">
+            <!-- Main content goes here -->
+            <section class="blog-pagess">
+                <div class="content__blog">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </section>
+                        <section class="blog-pagess">
+                <div class="content__blog">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </section>
+                        <section class="blog-pagess">
+                <div class="content__blog">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </section>
+        </main>
+
+
+        <aside class="sidebar">
+            <!-- Sidebar content goes here -->
+                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+                
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+                                <div class="side">
+                    <img src="blog-pic/blood-donation.jpg" alt="">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+
+        </aside>
+    </div>
+
+</body>
+</html>
