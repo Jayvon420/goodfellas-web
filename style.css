@@ -553,6 +553,18 @@ header{
     transform: scale(1.05);
     filter: blur(3px); 
 }
+
+.card__section h3{
+    font-family: "Playfair Display SC", serif;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.card__section p {
+    font-family: "Raleway", serif;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #949494;
+}
 /* end of blog css */
 
 /* About us css */
