@@ -304,23 +304,21 @@ header{
 }
 
 .section__partner{
-    padding: 70px 150px;
+    padding: 40px 150px;
     background-color: var(--bg-secondary);
 }
 
 .content__sponsors{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .content__sponsors img {
-    width: 320px;
+    width: 220px;
     height: auto;
     opacity: 0.8;
     transition: 300ms ease-in-out;
-    /* background-color: var(--dirty-white); */
     box-shadow: 0 0 15px var(--bg-primary);
     background-color: var(--bg-secondary);
     padding: 10px 20px;
@@ -546,6 +544,47 @@ header{
 .card__section a:hover{
     transform: scale(1.05);
 }
+/* end of blog css */
+
+/* About us css */
+
+.mission, .vision{
+    text-align: center;
+    padding: 0 70px;
+}
+.mission h1, .vision h1{
+    padding-bottom: 70px;
+}
+
+.content__about{
+    display: grid;
+    text-align: center;
+    gap: 150px;
+}
+.content__about h1{
+    font-size: 55px;
+}
+.content__about p{
+    font-size: 20px;
+}
+.values--card h1{
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.value--container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.values--card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+}
+/* end of about us css */
 
 
 
@@ -659,7 +698,8 @@ header{
 
    
     .content__sponsors{
-        justify-content: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
         align-items: center;
     }
     .content__sponsors img {
@@ -704,9 +744,26 @@ header{
         justify-items: center;
     }
 
-
     /* blog page media */
     .card__section{
         grid-template-columns: 1fr;
+    }
+
+    /* about us media */
+    .content__about{
+        gap: 20px;
+    }
+    .vision, .mission{
+        padding: 0;
+    }
+
+    .value--container{
+        grid-template-columns: 1fr;
+    }
+    .values--card h1{
+        font-size: 20px;
+    }
+    .values--card p{
+        font-size: 15px;
     }
 }

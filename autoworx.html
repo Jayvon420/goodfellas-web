@@ -12,7 +12,7 @@
     <main>
         <header>
             <nav class="nav__bar">
-                <a href="#home" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/500x500-goldmain.png" alt="GoodFellas Logo">
                 </a>
 
@@ -21,6 +21,8 @@
 
                 <div class="nav__menu">
                     <ul class="nav__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">blog</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -35,8 +37,10 @@
                 --section-bg-size: cover;
                 --section-bg-opacity: 100;">
             <div class="content__text">
-                <h1 class="mb-5">Need a <span  id="typed-text" style="color: #FED402;">Premium Carwash?</span></h1>
-                <p class="mb-5">Whether you're detailing your ride, energizing your body,<br>or inspiring your spirit, Goodfellas is here to serve with <br>heart, craft, and care.</p>
+                <h1 class="pb-70">Need a <span  id="typed-text" style="color: #FED402;">Premium Carwash</span>
+                <br>For your car ?
+                </h1>
+                <p class="pb-70">Goodfellas: We handle your car, body, and more with care and expertise. <br>From premium car washes to revitalizing services, we ensure <br>every detail is perfect so you can ride with confidence.</p>
                 <div class="btn--group">
                     <a href="##" class="btn">Contact</a>
                     <a href="##" class="btn btn--outline">Explore</a>
@@ -46,9 +50,10 @@
 
         
     </main>
+    
 
     <script>
-        const words = ["Premium Carwash?", "Detailing?", "Paint Correction?","Repair?"];
+        const words = ["Premium Carwash", "Detailing", "Paint Correction","Repair"];
         const typedTextSpan = document.getElementById("typed-text");
 
         let wordIndex = 0;
