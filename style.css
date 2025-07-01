@@ -308,6 +308,14 @@ header{
     background-color: var(--bg-secondary);
 }
 
+.section__partner h1{
+    color: var(--text-white);
+    font-family: "Playfair Display SC", serif;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
 .content__sponsors{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
